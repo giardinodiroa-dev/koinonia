@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Koinonia — Updates</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      color: #f0e6c8;
+      min-height: 100vh;
+      padding: 60px 24px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    .logo { display: flex; align-items: center; gap: 16px; margin-bottom: 56px; }
+    .logo img { width: 52px; height: 52px; border-radius: 50%; }
+    .logo-text img { height: 36px; }
+    h1 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: #c9a84c; margin-bottom: 40px; }
+    .release { margin-bottom: 48px; }
+    .release-header { display: flex; align-items: baseline; gap: 16px; margin-bottom: 20px; border-bottom: 1px solid #2a2a2a; padding-bottom: 12px; }
+    .version { font-size: 18px; font-weight: 700; color: #c9a84c; }
+    .date { font-size: 13px; color: #666; }
+    .tag {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin-left: auto;
+    }
+    .tag.new { background: #1a3a1a; color: #61bd4f; }
+    .feature { display: flex; gap: 12px; margin-bottom: 14px; align-items: flex-start; }
+    .feature-icon { color: #c9a84c; font-size: 16px; margin-top: 1px; flex-shrink: 0; }
+    .feature-text strong { display: block; font-size: 15px; color: #f0e6c8; margin-bottom: 3px; }
+    .feature-text span { font-size: 13px; color: #888; line-height: 1.5; }
+    .footer { margin-top: 64px; font-size: 12px; color: #444; text-align: center; }
+    .footer a { color: #c9a84c; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="/img/koinlogo.png" alt="Koinonia icon">
+      <div class="logo-text"><img src="/img/koinonia.png" alt="Koinonia"></div>
+    </div>
+
+    <h1>Changelog</h1>
+
+    <div class="release">
+      <div class="release-header">
+        <span class="version">v0.1.0</span>
+        <span class="date">May 2026</span>
+        <span class="tag new">Initial Release</span>
+      </div>
+
+      <div class="feature">
+        <span class="feature-icon">↑</span>
+        <div class="feature-text">
+          <strong>Auto Sort by Votes</strong>
+          <span>Cards in selected lists are automatically sorted by vote count every second. The most supported items always rise to the top — no manual reordering needed.</span>
+        </div>
+      </div>
+
+      <div class="feature">
+        <span class="feature-icon">☑</span>
+        <div class="feature-text">
+          <strong>Per-Board List Selection</strong>
+          <span>Choose exactly which lists on each board get auto-sorted. Settings are saved per board so every workspace can be configured independently.</span>
+        </div>
+      </div>
+
+      <div class="feature">
+        <span class="feature-icon">↻</span>
+        <div class="feature-text">
+          <strong>Manual Sort Trigger</strong>
+          <span>A "Sort Votes" button in the board header lets you force a sort at any time, independent of the automatic polling cycle.</span>
+        </div>
+      </div>
+
+      <div class="feature">
+        <span class="feature-icon">⚙</span>
+        <div class="feature-text">
+          <strong>Settings Panel</strong>
+          <span>Clean in-board settings UI to manage watched lists and API credentials without leaving Trello.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="https://koinonia-io.vercel.app">koinonia-io.vercel.app</a> &nbsp;·&nbsp; Community fund allocation &amp; coordination
+    </div>
+  </div>
+</body>
+</html>
