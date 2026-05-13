@@ -1,4 +1,4 @@
-var POLL_INTERVAL = 30000; // 30 seconds
+var POLL_INTERVAL = 1000; // 1 second
 var pollingTimer = null;
 
 function getCredentials(t) {
