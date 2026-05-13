@@ -65,8 +65,8 @@ TrelloPowerUp.initialize({
     return [{
       text: 'Sort Votes',
       icon: {
-        dark: window.location.origin + '/img/icon.svg',
-        light: window.location.origin + '/img/icon.svg'
+        dark: window.location.origin + '/img/koinlogo.png',
+        light: window.location.origin + '/img/koinlogo.png'
       },
       callback: function(t) {
         return runSort(t);
